@@ -1,0 +1,313 @@
+/* General body styling */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    margin: 20px; /* Added margin */
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-grow: 1;
+}
+
+/* Rectangle Box Styling (Now a regular class) */
+.rectangle-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Book List */
+.top-box1 { /* Directly targeting the existing class */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.top-box1 h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.book-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.book-item:last-child {
+    border-bottom: none;
+}
+
+.book-item:hover {
+    background-color: #f8f8f8;
+}
+
+.book-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.book-details span {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Update/Delete Form */
+.middle-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.middle-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.middle-box label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Add spacing below labels */
+    font-weight: 500;
+}
+
+.middle-box input[type="text"],
+.middle-box input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-bottom: 15px; /* Increased spacing below inputs */
+}
+
+/* Button Container */
+.middle-box .buttons {
+    display: flex; /* Use flexbox for button layout */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px; /* Add spacing between buttons */
+    margin-top: 15px;
+}
+
+.middle-box .btn-update,
+.middle-box .btn-delete {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    flex: 1; /* Make buttons take equal width */
+    text-align: center;
+}
+
+.middle-box .btn-update {
+    background-color: #007bff;
+    color: white;
+}
+
+.middle-box .btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.middle-box .btn-update:hover {
+    background-color: #0056b3;
+}
+
+.middle-box .btn-delete:hover {
+    background-color: #c82333;
+}
+
+
+/* Token Sections */
+.rectangle-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex: 1 1 50%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}
+
+.section:first-child {
+    border-right: none;
+}
+.section strong{
+    display: block;
+    margin-bottom: 10px;
+}
+.section ul{
+    list-style: none;
+    padding: 0;
+}
+.section li{
+    margin-bottom: 5px;
+}
+/* Image Boxes */
+.mid {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.squarebox {
+    flex: 1 1 30%;
+    max-width: 30%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.squarebox:hover {
+    transform: scale(1.05);
+}
+
+.squarebox img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Borrow/Add Book Forms */
+.lower {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lowerBox1,
+.lowerBox2 {
+    flex: 1 1 48%;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    padding: 15px;
+}
+.lowerBox1 h2,
+.lowerBox2 h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.lowerBox1 label,
+.lowerBox2 label{
+    display: block;
+    margin-bottom: 5px;
+}
+.lowerBox1 input[type="text"],
+.lowerBox1 input[type="number"],
+.lowerBox1 input[type="date"],
+.lowerBox1 select,
+.lowerBox2 input[type="text"],
+.lowerBox2 input[type="number"],
+.lowerBox2 input[type="date"],
+.lowerBox2 select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.lowerBox1 input[type="submit"],
+.lowerBox2 input[type="submit"]{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    background-color: #28a745;
+    color: white;
+}
+.lowerBox1 input[type="submit"]:hover,
+.lowerBox2 input[type="submit"]:hover{
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .squarebox {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .rectangle-container,
+    .lower { /* Target the lower container as well */
+        flex-direction: column;
+    }
+
+    .section {
+        flex: 1 1 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .section:last-child {
+        border-bottom: none;
+    }
+    /* Responsive Design (Simplified) */
+
+    /* Other responsive styles... */
+    .middle-box .buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+
+    .lowerBox1,
+    .lowerBox2 {
+        flex: 1 1 100%;
+    }
+    .middle-box form {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+    .middle-box label{
+        text-align: left;
+    }
+}
